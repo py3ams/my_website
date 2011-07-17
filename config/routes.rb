@@ -1,4 +1,11 @@
 MyWebsite::Application.routes.draw do
+  
+  get "pages/home"
+  get "pages/research"
+  get "pages/contact"
+  get "pages/links"
+  get "pages/personal"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
