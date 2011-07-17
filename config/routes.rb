@@ -5,6 +5,13 @@ MyWebsite::Application.routes.draw do
   get "pages/contact"
   get "pages/links"
   get "pages/personal"
+  
+  root :to => 'pages#home'
+  match '/research',   :to => 'pages#research'
+  match '/contact', :to => 'pages#contact'
+  match '/links',    :to => 'pages#links'
+  match '/personal',    :to => 'pages#personal'
+  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
