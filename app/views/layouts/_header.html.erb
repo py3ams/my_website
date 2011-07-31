@@ -11,9 +11,13 @@
           <li><%= link_to "MOVIES", movies_path %></li>
         </ul>
       </li>
-      <li><%= link_to "PERSONAL", personal_path %></li>
-      <li><%= link_to "LINKS", links_path %></li>
-      <li><%= link_to "CONTACT", contact_path %></li>
+      <li><%= link_to "PERSONAL", personal_path %>
+        <ul class="subnav">
+          <li><%= link_to "CV", cv_path %></li>
+          <li><%= link_to "OTHER INTERESTS", other_interests_path %>
+        </ul>     
+      </li>
+      <li><a href="mailto:aaron.smith@hertford.ox.ac.uk">CONTACT</a></li>
     </ul>
   </nav>
 </header>

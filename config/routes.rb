@@ -8,6 +8,9 @@ MyWebsite::Application.routes.draw do
   match '/links',    :to => 'pages#links'
   match '/personal',    :to => 'pages#personal'
   match '/movies', :to => 'pages#movies'
+  match '/biography', :to => 'pages#biography'
+  match '/cv', :to => 'pages#cv'
+  match '/other_interests', :to => 'pages#other_interests'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

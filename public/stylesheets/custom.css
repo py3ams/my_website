@@ -43,10 +43,10 @@ h2 {
 /* Navigation */
 
 nav {
-  font-size:1.7em;
+  font-size:1.8em;
   font-weight:bold;	
   text-align:center;
-  word-spacing:6px;
+  word-spacing:15px;
 }
 
 nav ul {
@@ -58,7 +58,7 @@ nav ul li {
   display: inline-block;
 }
 
-nav ul li a {
+nav ul li a:link {
   color:rgb(180,0,0);
   text-decoration:none;
 }
@@ -84,7 +84,7 @@ ul.topnav li span {
 	width: 0.8em;
 	height: 1em;
 	float: left;
-	background: url("/images/redDropDownArrow.jpg") no-repeat left bottom;
+	background: url("/images/reddropdownarrow.jpg") no-repeat left bottom;
 }
 
 ul.topnav li span.subhover {
@@ -131,6 +131,14 @@ section p {
   text-align:justify;
 }
 
+a:link {
+  color:rgb(0,0,180);
+}
+
+a:hover {
+  color:rgb(139, 117, 0);
+}
+
 /* Address */
 
 address {
@@ -138,6 +146,11 @@ address {
   margin-bottom:50px;
   font-size:1.35em;
   text-align:center; 
+}
+
+footer {
+  font-size:0.8em;
+  font-weight:bold;
 }
 
 /* My picture */
@@ -159,4 +172,14 @@ address {
 #morphogen_gradient_vertex_model {
   width:220px;
   float:left;
+}
+
+#graduation_picture {
+  width:300px;
+  float:left;
+  margin-right:10px;
+  margin-top:10px;
+  -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
 }
