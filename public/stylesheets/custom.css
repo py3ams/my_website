@@ -1,11 +1,12 @@
 body {
   background: rgb(180,0,0);
+  font-size:100%;
 }
 
 .container {
   width: 710px;
   margin: 20px auto;
-  padding: 10px;
+  padding: 20px;
   background: rgb(256,256,256);
   border-style:double;	
   border-width:10px;
@@ -21,13 +22,31 @@ body {
   border-radius:         10px;
 }
 
+/* Header */
+header {
+  margin-top:10px;
+  margin-bottom:30px;
+}
+
+h1 {
+  font-size:4em;
+  margin-bottom:20px;
+  font-weight:bold;	
+  text-align:center;
+}
+
+h2 {
+  font-size:2em;	
+  text-align:center;
+}
+
 /* Navigation */
 
 nav {
-  font-size:28px;
-  word-spacing:14px;
-  text-align:center;
+  font-size:1.8em;
   font-weight:bold;	
+  text-align:center;
+  word-spacing:10px;
 }
 
 nav ul {
@@ -52,22 +71,44 @@ nav ul li a:hover {
 /* Section */
 
 section {
-  font-size: 120%;
   padding:0px;
-  text-align:center;
 }
 
 section h1 {
-  font-size: 300%;
   text-align: center;
   color: rgb(0, 33, 71);
+}
+
+section p {
+  text-align:justify;
+}
+
+/* Address */
+
+address {
+  padding-top:28px;
+  margin-bottom:50px;
+  font-size:1.35em;
+  text-align:center; 
 }
 
 /* My picture */
 
 #my_picture {
-  width:500px;
+  width:300px;
+  float:right;
+  margin-left:10px;
   -moz-border-radius:    10px;
   -webkit-border-radius: 10px;
   border-radius:         10px;
+}
+
+#AVE_migration_vertex_model {
+  width:200px;
+  float:right;
+}
+
+#morphogen_gradient_vertex_model {
+  width:220px;
+  float:left;
 }
