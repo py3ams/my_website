@@ -4,21 +4,8 @@
 
 <p>In the vertex model, forces are based on the dynamic physical properties of the cells and act at polygonal vertices. Equations of motion are formulated and solved to elucidate the behaviour of the system over time. In my PhD thesis I will offer several extensions and novelties to the existing literature, and show how they can be applied to real biological systems.</p>
 
-
-<h2>AVE migration in the mouse embryo</h2>
-
-<p>The early post-implantation (E5.5) mouse embryo consists of three tissues, which together form a geometry commonly referred to as an 'egg cylinder'. The visceral endoderm (VE) is an epithelium of roughly 150 cells surrounding the other two tissues.<%= image_tag("AVE_migration_vertex_model.jpg", :alt => "AVE migration in the vertex model", :id => 'AVE_migration_vertex_model') %> A subset of cells from the VE differentiate and migrate away from the distal tip of the embryo, coming to an abrupt stop at a point over the barrier between the epiblast and the extra-embryonic ectoderm. The final resting place of these cells is the future anterior.</p>
-
-<p>The mechanisms driving migration are not clearly understood. Indeed it is unknown whether the position of the future anterior is pre-determined, or defined by the movement of the migrating cells. During this migratory period the phenomenon of multicellular rosettes has been observed, which occurs when five or more cells meet at a common vertex.</p>
-
-<p>We have developed a vertex-based model of AVE migration. In this formulation cells are treated as polygons, with forces acting at vertices. Starting with a simple two-dimensional model, we were able to mimic rosette formation by allowing close vertices to join together. This was then transferred to a more realistic ellipsoid geometry, and more features, including cell growth, proliferation, and T1 transitions were incorporated. The model is currently being used to test various hypotheses in relation to AVE migration, which will in turn lead to experimental predictions that can be tested by Dr. Srinivas in the laboratory.</p><br />
-
-<h2>Modelling morphogen gradients in the vertex model</h2>
-
-<p>We are developing an extension to the two-dimensional vertex formulation that includes a model of production, degradation, and diffusion of a chemical accross the domain. This utilises an Arbitrary Langragian Eulerian formulation and the finite-element method to solve the diffusion equation on a moving domain.</p>
-
-<%= image_tag("morphogen_gradient_vertex_model.jpg", :alt => "Morphogen gradient in the vertex model", :id => 'morphogen_gradient_vertex_model') %>
-
-<p>A potential application area is the <span style="font-style:italic">Drosophila</span> imaginal wing disc, a model system often used to examine organ patterning and growth. It grows from an embryonic primordium of roughly 40 cells to around 50,000. The size and shape of the adult wing is determined by the patterns of cell growth, division and a small amount of apoptosis in the disc.</p> 
-
-<p>Decapentaplegic (Dpp) is a morphogen that plays a key role during many <span style="font-style:italic">Drosophila</span> developmental processes, and is thought to be crucial in the patterning of the wing disc, as well as acting as a growth-promoting factor. Despite the presence of an exponential Dpp gradient, however, growth is uniform across the wing disc. The exact mechanism by which Dpp controls growth is unknown, and there are several competing hypotheses. 
+<ul>
+<li> More information about my work on AVE migration in the mouse embryo can be found <%= link_to "here", ave_migration_path %>.</li>
+<li> More information about my work on modelling morphogen gradients can be found <%= link_to "here", morphogen_gradients_path %>.</li>
+<li> Click <%= link_to "here", movies_path %> for movies from my PhD.</li> 
+</ul>

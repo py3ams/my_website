@@ -1,17 +1,13 @@
 MyWebsite::Application.routes.draw do
-  
-  get "pages/home"
-  get "pages/research"
-  get "pages/contact"
-  get "pages/links"
-  get "pages/personal"
-  
+    
   root :to => 'pages#home'
   match '/research',   :to => 'pages#research'
+  match '/ave_migration', :to => 'pages#ave_migration'
+  match '/morphogen_gradients', :to => 'pages#morphogen_gradients'
   match '/contact', :to => 'pages#contact'
   match '/links',    :to => 'pages#links'
   match '/personal',    :to => 'pages#personal'
-  
+  match '/movies', :to => 'pages#movies'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -7,6 +7,14 @@ class PagesController < ApplicationController
     @title = "Research"
   end
 
+  def ave_migration
+    @title = "Research"
+  end
+  
+  def morphogen_gradients
+    @title = "Research"
+  end
+
   def contact
     @title = "Contact"
   end
@@ -17,6 +25,10 @@ class PagesController < ApplicationController
 
   def personal
     @title = "Personal"
+  end
+  
+  def movies
+    @title = "Movies"
   end
 
 end
