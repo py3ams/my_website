@@ -43,10 +43,10 @@ h2 {
 /* Navigation */
 
 nav {
-  font-size:1.8em;
+  font-size:1.7em;
   font-weight:bold;	
   text-align:center;
-  word-spacing:10px;
+  word-spacing:6px;
 }
 
 nav ul {
@@ -67,6 +67,54 @@ nav ul li a:hover {
   color:rgb(139, 117, 0);
   text-decoration:none;
 }
+
+
+ul.topnav li {
+	position: relative; /*--Declare X and Y axis base for sub navigation--*/
+}
+
+/* ensures text is on right of drop down arrow */
+ul.topnav li a{
+	float: left;
+}
+
+/* The span is to do with the drop down arrow section */
+ul.topnav li span {
+	margin-left:0.1em;
+	width: 0.8em;
+	height: 1em;
+	float: left;
+	background: url("/images/redDropDownArrow.jpg") no-repeat left bottom;
+}
+
+ul.topnav li span.subhover {
+	background-position: left bottom; 
+	cursor: pointer;
+}
+
+ul.topnav li ul.subnav {
+	width: 200px;
+	background: rgb(256,256,256);
+	position: absolute; /*--Important - Keeps subnav from affecting main navigation flow--*/
+	left: -20px; top: 40px;
+	margin: 0; padding: 5px;
+	display: none;
+	float: left;
+	font-size:0.5em;
+	text-align:center;
+	border-style:solid;	
+	border-color:black;
+	border-width:2px;
+	-moz-border-radius:    10px;
+    -webkit-border-radius: 10px;
+    border-radius:         10px;
+}
+
+html ul.topnav li ul.subnav li a {
+	word-spacing:0.1em;
+	width: 200px;
+}
+
 
 /* Section */
 
