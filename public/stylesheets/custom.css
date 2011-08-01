@@ -78,7 +78,8 @@ ul.topnav li a{
 	float: left;
 }
 
-/* The span is to do with the drop down arrow section */
+/* sexy_drop_down_menu.js span adds an empty span tag after ul.subnav. these attributes
+control the size and margins etc of the arrow. */
 ul.topnav li span {
 	margin-left:0.1em;
 	width: 0.8em;
@@ -87,11 +88,14 @@ ul.topnav li span {
 	background: url("/images/reddropdownarrow.jpg") no-repeat left bottom;
 }
 
+/* subhover is a class that gets added when we hover on the drop down arrow, and removed immediately.
+can use these attributes to change what happens to the cursor and the arrow when we hover over it. */
 ul.topnav li span.subhover {
 	background-position: left bottom; 
 	cursor: pointer;
 }
 
+/* subnav is the class for the ul that contains the the drop down menu */
 ul.topnav li ul.subnav {
 	width: 200px;
 	background: rgb(256,256,256);
