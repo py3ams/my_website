@@ -40,47 +40,44 @@ h2 {
   text-align:center;
 }
 
-/* Navigation */
+h3 {
+  font-size:1.6em;	
+  text-align:center;
+}
 
-nav {
+/* Navigation.  */
+
+nav ul {
   font-size:1.8em;
   font-weight:bold;	
   text-align:center;
   word-spacing:15px;
-}
-
-nav ul {
   margin: 0;
   padding: 0;
 }
 
 nav ul li {
   display: inline-block;
+  position: relative; /*--Declare X and Y axis base for sub navigation--*/
+}
+
+/* ensures text is on right of drop down arrow */
+nav ul li a {
+	float: left;
+	text-decoration:none;
 }
 
 nav ul li a:link {
   color:rgb(180,0,0);
-  text-decoration:none;
 }
 
-nav ul li a:hover { 
+nav ul li a:hover {
   color:rgb(139, 117, 0);
-  text-decoration:none;
-}
-
-
-ul.topnav li {
-	position: relative; /*--Declare X and Y axis base for sub navigation--*/
-}
-
-/* ensures text is on right of drop down arrow */
-ul.topnav li a{
-	float: left;
 }
 
 /* sexy_drop_down_menu.js span adds an empty span tag after ul.subnav. these attributes
 control the size and margins etc of the arrow. */
-ul.topnav li span {
+nav ul li span {
 	margin-left:0.1em;
 	width: 0.8em;
 	height: 1em;
@@ -90,18 +87,23 @@ ul.topnav li span {
 
 /* subhover is a class that gets added when we hover on the drop down arrow, and removed immediately.
 can use these attributes to change what happens to the cursor and the arrow when we hover over it. */
-ul.topnav li span.subhover {
+nav ul li span.subhover {
 	background-position: left bottom; 
 	cursor: pointer;
 }
 
 /* subnav is the class for the ul that contains the the drop down menu */
-ul.topnav li ul.subnav {
+nav ul li ul.subnav {
 	width: 200px;
 	background: rgb(256,256,256);
 	position: absolute; /*--Important - Keeps subnav from affecting main navigation flow--*/
-	left: -20px; top: 40px;
-	margin: 0; padding: 5px;
+	left: -20px; 
+	top: 40px;
+	margin: 0; 
+	padding-top:10px;
+	padding-left:5px;
+	padding-right:5px;
+	padding-bottom:5px;
 	display: none;
 	float: left;
 	font-size:0.5em;
@@ -114,11 +116,18 @@ ul.topnav li ul.subnav {
     border-radius:         10px;
 }
 
-html ul.topnav li ul.subnav li a {
+nav ul li ul.subnav li a {
 	word-spacing:0.1em;
 	width: 200px;
 }
 
+nav ul li ul.subnav li a:link {
+   color:rgb(180,0,0);
+}
+
+nav ul li ul.subnav li a:hover {
+   color:rgb(139, 117, 0);
+}
 
 /* Section */
 
@@ -186,4 +195,8 @@ footer {
   -moz-border-radius:    10px;
   -webkit-border-radius: 10px;
   border-radius:         10px;
+}
+
+.movie {
+  margin-bottom:30px;
 }
