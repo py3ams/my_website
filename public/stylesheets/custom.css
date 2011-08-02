@@ -186,6 +186,7 @@ address {
 }
 
 footer {
+  margin-top:30px;
   font-size:0.8em;
   font-weight:bold;
 }
