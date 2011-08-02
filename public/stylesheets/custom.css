@@ -71,7 +71,15 @@ nav ul li a:link {
   color:rgb(180,0,0);
 }
 
+nav ul li a:visited {
+  color:rgb(180,0,0);
+}
+
 nav ul li a:hover {
+  color:rgb(139, 117, 0);
+}
+
+nav ul li a:active {
   color:rgb(139, 117, 0);
 }
 
@@ -125,7 +133,15 @@ nav ul li ul.subnav li a:link {
    color:rgb(180,0,0);
 }
 
+nav ul li ul.subnav li a:visited {
+   color:rgb(180,0,0);
+}
+
 nav ul li ul.subnav li a:hover {
+   color:rgb(139, 117, 0);
+}
+
+nav ul li ul.subnav li a:active {
    color:rgb(139, 117, 0);
 }
 
@@ -148,7 +164,15 @@ a:link {
   color:rgb(0,0,180);
 }
 
+a:visited {
+  color:rgb(0,0,180);
+}
+
 a:hover {
+  color:rgb(139, 117, 0);
+}
+
+a:active {
   color:rgb(139, 117, 0);
 }
 
