@@ -226,3 +226,28 @@ footer {
 .movie {
   margin-bottom:30px;
 }
+
+table {
+  font-size:1.1em;
+}
+
+
+tr td {
+  padding:1px;
+}
+
+.CV_place_name {
+  float:right;
+  font-weight:normal;
+}
+
+.CV_main_section_header {
+  font-weight:bold;
+}
+
+.CV_institution_name {
+  font-weight:bold;
+}
+
+
+
