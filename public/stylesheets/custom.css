@@ -250,4 +250,13 @@ tr td {
   font-weight:bold;
 }
 
+.youtube_description {
+  margin-left:30px;
+  margin-right:30px;
+  font-style:italic;
+}
 
+.youtube_header {
+  font-weight:bold;
+  text-decoration:underline;
+}
