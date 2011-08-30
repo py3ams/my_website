@@ -31,4 +31,8 @@ class PagesController < ApplicationController
     @title = "Movies"
   end
 
+  def cv
+    @title = "Personal"
+  end
+
 end
