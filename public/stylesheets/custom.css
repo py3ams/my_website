@@ -180,7 +180,7 @@ a:active {
 
 address {
   padding-top:28px;
-  margin-bottom:50px;
+  margin-bottom:80px;
   font-size:1.35em;
   text-align:center; 
 }
@@ -195,9 +195,10 @@ footer {
 /* My picture */
 
 #my_picture {
-  width:300px;
+  width:280px;
   float:right;
   margin-left:10px;
+  margin-right:40px;
   -moz-border-radius:    10px;
   -webkit-border-radius: 10px;
   border-radius:         10px;
@@ -211,6 +212,7 @@ footer {
 #morphogen_gradient_vertex_model {
   width:220px;
   float:left;
+  margin-bottom:20px;
 }
 
 #graduation_picture {
