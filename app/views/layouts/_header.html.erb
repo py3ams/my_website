@@ -1,8 +1,7 @@
 <header>
-  <h1>Aaron M. Smith</h1>
+  <h1><%= link_to "Aaron M. Smith", root_path %></h1>
   <nav>
     <ul>
-      <li><%= link_to "HOME", root_path %></li>
       <li>
         <%= link_to "RESEARCH", research_path %>
         <ul class="subnav"> 
@@ -10,6 +9,12 @@
           <li><%= link_to "MORPHOGEN GRADIENTS", morphogen_gradients_path %></li>
           <li><%= link_to "MOVIES", movies_path %></li>
         </ul>
+      </li>
+      <li><%= link_to "SERVICES", services_path %>
+      <ul class="subnav">
+          <li><%= link_to "EDITING", "AaronSmithCV.pdf" %></li>
+          <li><%= link_to "TRANSLATION", "AaronSmithCV.pdf" %></li>
+        </ul>     
       </li>
       <li><%= link_to "PERSONAL", personal_path %>
         <ul class="subnav">

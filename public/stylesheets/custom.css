@@ -48,10 +48,10 @@ h3 {
 /* Navigation.  */
 
 nav ul {
-  font-size:1.8em;
+  font-size:1.5em;
   font-weight:bold;	
   text-align:center;
-  word-spacing:15px;
+  word-spacing:0.3em;
   margin: 0;
   padding: 0;
 }

@@ -34,5 +34,9 @@ class PagesController < ApplicationController
   def cv
     @title = "Personal"
   end
+  
+  def services
+    @title = "Language Services"
+  end
 
 end
