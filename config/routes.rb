@@ -11,6 +11,7 @@ MyWebsite::Application.routes.draw do
   match '/biography', :to => 'pages#biography'
   match '/cv', :to => 'pages#cv'
   match '/services', :to => 'pages#services'
+  match '/editing', :to => 'pages#editing'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
